@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/beckground"
+    tools:context=".About_App" >
+
+    <TextView
+        android:id="@+id/tvAboutApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:fontFamily="@font/bad_script"
+        android:text="This app is an app that will teach your child basic words in the English language while combining audio and image of the words ."
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/tvSMS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bad_script"
+        android:textColor="@color/white"
+        android:text="you can ask questions  the developer in the SMS button down below ."
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/btSMS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="SMS"
+        android:text="SMS" />
+
+    <ImageView
+        android:id="@+id/ivAboutAppReturn"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+</LinearLayout>

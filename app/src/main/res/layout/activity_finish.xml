@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/beckground"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Finish">
+
+    <TextView
+        android:id="@+id/tvPoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bad_script"
+        android:textColor="@color/white"
+        android:text="TextView"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/tv_your_mistakes"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:fontFamily="@font/bad_script"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:text="your mistaks:" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="433dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvMistakes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bad_script"
+                android:text="TextView"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tvThanks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bad_script"
+        android:text="Thank you so much for using this app we hope you enjoyed"
+        android:textColor="@color/white"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/btReturnHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:onClick="ReturnHome"
+        android:text="Return-Home" />
+</LinearLayout>
